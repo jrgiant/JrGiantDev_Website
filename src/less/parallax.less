@@ -9,7 +9,7 @@
   top: -10vh;
   &>.parallax-content {
     position: absolute;
-    top:60%;
+    top:80%;
     left:0;
     min-height:@parallax-text-min-height;
     padding:10px;
@@ -19,10 +19,17 @@
     clip-path: polygon(0 0,100% 17%, 100% 100%, 0 100%);
     padding: 3%;
     padding-top: 10%;
+    width:100%;
   }
   &>.parallax-closing{
     height: 5vh;
     .parrallel-polygon(0,0%, 100%, 30%);
     background-color: #101;
+  }
+  &>img {
+    height: 40%;
+    position: fixed;
+    top: 25%;
+    left: 20%;
   }
 }

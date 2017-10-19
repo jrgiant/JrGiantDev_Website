@@ -4,13 +4,43 @@
 @import "mixins.less";
 @import "header.less";
 @import "parallax.less";
+@import "footer.less";
 
-.html-css{
-  background-color: linear-gradient(rgba(255, 255, 200, 1), rgba(200, 255, 255, .4));
+.all-logos{
+  background-color:#ddedd3;
+  background-image: url("../../raw-media/all_web_tech_logos.png");
+  height:80vh;
 }
-
-.parallax {
-  &.html-css{
-    background-image: url("../../raw-media/CoffeeRound_nathan-dumlao-298337.jpg");
-  }
+.javascript-jquery-nodejs {
+  background-color:#ededff;
+  background-image: url("../../raw-media/Javascript_jquery_node.png");
+}
+.html-css-bootstrap-less {
+  background-color:#c0ffee;
+  background-image: url("../../raw-media/html5_css_less_bootstrap.png");
+}
+.php-mysql-git {
+  background-color:#c0dec5;
+  background-image: url("../../raw-media/php-mysql-git-no-background.png");
+}
+.microsoft {
+  background-color:#add1c7;
+  background-image: url("../../raw-media/microsoft-logos.png");
+}
+a.back-to-top {
+    position: fixed;
+    color:#101;
+    background-color: rgba(186, 218, 85,0.4);
+    &:hover{
+      background-color: rgba(186, 218, 85,1);
+    }
+    bottom: 40px;
+    right: 40px;
+    padding: 30px;
+    border-radius: 40px;
+    text-decoration: none;
+    font-size: 2em;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 40px;
 }

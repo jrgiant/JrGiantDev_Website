@@ -243,13 +243,13 @@ header h1 {
   background-repeat: no-repeat;
   position: relative;
   min-height: 200px;
-  height: 80vh;
-  max-height: 800px;
+  height: 100vh;
+  max-height: 1600px;
   top: -10vh;
 }
 .parallax > .parallax-content {
   position: absolute;
-  top: 60%;
+  top: 80%;
   left: 0;
   min-height: 200px;
   padding: 10px;
@@ -259,6 +259,7 @@ header h1 {
   clip-path: polygon(0 0, 100% 17%, 100% 100%, 0 100%);
   padding: 3%;
   padding-top: 10%;
+  width: 100%;
 }
 .parallax > .parallax-closing {
   height: 5vh;
@@ -266,9 +267,79 @@ header h1 {
   shape-outside: polygon(0 0, 100% 0%, 100% 100%, 0 30%);
   background-color: #101;
 }
-.html-css {
-  background-color: linear-gradient(#ffffc8, rgba(200, 255, 255, 0.4));
+.parallax > img {
+  height: 40%;
+  position: fixed;
+  top: 25%;
+  left: 20%;
 }
-.parallax.html-css {
-  background-image: url("../../raw-media/CoffeeRound_nathan-dumlao-298337.jpg");
+footer {
+  background-color: #101;
+  color: white;
+  padding-bottom: 50px;
+}
+@media screen and (max-width: 458px) {
+  footer {
+    padding-top: 80px;
+  }
+}
+footer .centerFooter {
+  text-align: center;
+}
+footer .centerFooter > div {
+  padding-top: 20px;
+}
+@media all and (min-width: 768px) {
+  footer .centerFooter > div {
+    padding-top: 60px;
+  }
+}
+footer a {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+footer a img {
+  width: 150px;
+}
+@media all and (max-width: 992px) {
+  footer a img {
+    width: 75px;
+  }
+}
+.all-logos {
+  background-color: #ddedd3;
+  background-image: url("../../raw-media/all_web_tech_logos.png");
+  height: 80vh;
+}
+.javascript-jquery-nodejs {
+  background-color: #ededff;
+  background-image: url("../../raw-media/Javascript_jquery_node.png");
+}
+.html-css-bootstrap-less {
+  background-color: #c0ffee;
+  background-image: url("../../raw-media/html5_css_less_bootstrap.png");
+}
+.php-mysql-git {
+  background-color: #c0dec5;
+  background-image: url("../../raw-media/php-mysql-git-no-background.png");
+}
+.microsoft {
+  background-color: #add1c7;
+  background-image: url("../../raw-media/microsoft-logos.png");
+}
+a.back-to-top {
+  position: fixed;
+  color: #101;
+  background-color: rgba(186, 218, 85, 0.4);
+  bottom: 40px;
+  right: 40px;
+  padding: 30px;
+  text-decoration: none;
+  font-size: 2em;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-radius: 40px;
+}
+a.back-to-top:hover {
+  background-color: #bada55;
 }

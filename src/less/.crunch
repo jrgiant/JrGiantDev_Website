@@ -18,6 +18,8 @@
 			"sources": [
 				"browser-reset.less",
 				"element-font-sizes.less",
+				"footer.less",
+				"gradients.less",
 				"header.less",
 				"mixins.less",
 				"parallax.less",

@@ -1,0 +1,274 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url('https://fonts.googleapis.com/css?family=Shadows+Into+Light');
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/*******************
+end of reset
+*******************/
+h1 {
+  font-size: 4em;
+}
+@media screen and (min-width: 768px) {
+  h1 {
+    font-size: 4.5em;
+  }
+}
+@media screen and (min-width: 992px) {
+  h1 {
+    font-size: 5.5em;
+  }
+}
+@media screen and (min-width: 1200px) {
+  h1 {
+    font-size: 6em;
+  }
+}
+h2 {
+  font-size: 2.5em;
+}
+@media screen and (min-width: 768px) {
+  h2 {
+    font-size: 4em;
+  }
+}
+@media screen and (min-width: 992px) {
+  h2 {
+    font-size: 4.5em;
+  }
+}
+@media screen and (min-width: 1200px) {
+  h2 {
+    font-size: 5em;
+  }
+}
+h3 {
+  font-size: 1.5em;
+}
+@media screen and (min-width: 768px) {
+  h3 {
+    font-size: 2em;
+  }
+}
+@media screen and (min-width: 992px) {
+  h3 {
+    font-size: 2.5em;
+  }
+}
+@media screen and (min-width: 1200px) {
+  h3 {
+    font-size: 3em;
+  }
+}
+h4 {
+  font-size: 1em;
+}
+@media screen and (min-width: 768px) {
+  h4 {
+    font-size: 1em;
+  }
+}
+@media screen and (min-width: 992px) {
+  h4 {
+    font-size: 1.5em;
+  }
+}
+@media screen and (min-width: 1200px) {
+  h4 {
+    font-size: 2em;
+  }
+}
+/*Parallax Varibles*/
+header {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#c0dec5+0,7add8a+100 */
+  background: #c0dec5;
+  /* Old browsers */
+  /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPHJhZGlhbEdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY3g9IjUwJSIgY3k9IjUwJSIgcj0iNzUlIj4KICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiNjMGRlYzUiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjN2FkZDhhIiBzdG9wLW9wYWNpdHk9IjEiLz4KICA8L3JhZGlhbEdyYWRpZW50PgogIDxyZWN0IHg9Ii01MCIgeT0iLTUwIiB3aWR0aD0iMTAxIiBoZWlnaHQ9IjEwMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+  background: -moz-radial-gradient(center, ellipse cover, #c0dec5 0%, #7add8a 100%);
+  /* FF3.6-15 */
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #c0dec5), color-stop(100%, #7add8a));
+  /* Chrome4-9,Safari4-5 */
+  background: -webkit-radial-gradient(center, ellipse cover, #c0dec5 0%, #7add8a 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: -o-radial-gradient(center, ellipse cover, #c0dec5 0%, #7add8a 100%);
+  /* Opera 12+ */
+  background: -ms-radial-gradient(center, ellipse cover, #c0dec5 0%, #7add8a 100%);
+  /* IE10 preview */
+  background: radial-gradient(ellipse at center, #c0dec5 0%, #7add8a 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#c0dec5', endColorstr='#7add8a', GradientType=1);
+  /* IE6-8 fallback on horizontal gradient */
+  clip-path: polygon(0 0, 100% 0%, 100% 70%, 0 100%);
+  shape-outside: polygon(0 0, 100% 0%, 100% 70%, 0 100%);
+  text-align: center;
+  height: 20vh;
+  position: relative;
+  padding-top: 5%;
+  z-index: 1;
+}
+header h1 {
+  font-family: 'Shadows Into Light', cursive;
+  font-weight: bold;
+}
+.parallax {
+  background-color: #bada55;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  position: relative;
+  min-height: 200px;
+  height: 80vh;
+  max-height: 800px;
+  top: -10vh;
+}
+.parallax > .parallax-content {
+  position: absolute;
+  top: 60%;
+  left: 0;
+  min-height: 200px;
+  padding: 10px;
+  background-color: #101;
+  color: #fefefe;
+  height: 40%;
+  clip-path: polygon(0 0, 100% 17%, 100% 100%, 0 100%);
+  padding: 3%;
+  padding-top: 10%;
+}
+.parallax > .parallax-closing {
+  height: 5vh;
+  clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 30%);
+  shape-outside: polygon(0 0, 100% 0%, 100% 100%, 0 30%);
+  background-color: #101;
+}
+.html-css {
+  background-color: linear-gradient(#ffffc8, rgba(200, 255, 255, 0.4));
+}
+.parallax.html-css {
+  background-image: url("../../raw-media/CoffeeRound_nathan-dumlao-298337.jpg");
+}

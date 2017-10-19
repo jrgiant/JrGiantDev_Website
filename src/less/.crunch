@@ -1,0 +1,30 @@
+{
+	"files": {
+		"style.less": {
+			"engines": [
+				{
+					"compiler": "less",
+					"output": "../css/style.css",
+					"options": {
+						"compress": false,
+						"ieCompat": false,
+						"strictMath": false,
+						"strictUnits": false,
+						"javascriptEnabled": false,
+						"sourceMap": true
+					}
+				}
+			],
+			"sources": [
+				"browser-reset.less",
+				"element-font-sizes.less",
+				"header.less",
+				"mixins.less",
+				"parallax.less",
+				"polygon.less",
+				"style.less",
+				"varibles.less"
+			]
+		}
+	}
+}

@@ -8,10 +8,10 @@
     if (back_to_top){
     var scrollTop = (window.pageYOffset !== undefined) ? window.pageYOffset : (document.documentElement || document.body.parentNode || document.body).scrollTop;
     if (scrollTop > 200){
-      back_to_top.style.display="block";
+      back_to_top.style.opacity="1";
     }
     else{
-      back_to_top.style.display="none";
+      back_to_top.style.opacity="0";
     }
   }
   }

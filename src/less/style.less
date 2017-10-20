@@ -10,6 +10,7 @@
   background-color:#ddedd3;
   background-image: url("../../raw-media/all_web_tech_logos.png");
   height:80vh;
+  top:-10vh;
 }
 .javascript-jquery-nodejs {
   background-color:#ededff;
@@ -31,6 +32,9 @@ a.back-to-top {
     position: fixed;
     color:#101;
     background-color: rgba(186, 218, 85,0.4);
+    transition: opacity 1s;
+    -moz-transition: opacity 1s;
+    -webkit-transition: opacity 1s;
     &:hover{
       background-color: rgba(186, 218, 85,1);
     }
@@ -43,4 +47,9 @@ a.back-to-top {
     padding-top: 20px;
     padding-bottom: 20px;
     border-radius: 40px;
+}
+.unsplash-credit {
+  position: absolute;
+  bottom:10px;
+  width:180px;
 }

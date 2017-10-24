@@ -3,6 +3,11 @@
   height:@parallax-height;
   max-height:@parallax-max-height;
 }
+.transition(@type,@time,@trans:ease-in-out){
+  transition: @type @time @trans;
+  -moz-transition: @type @time @trans;
+  -webkit-transition: @type @time @trans;
+}
 
 @import "gradients.less";
 

@@ -6,5 +6,6 @@ jdr.onloads.push(()=>{
     style.appendChild(document.createTextNode('.gradient {filter: none;}'));
     var head = document.head || document.getElementByTagName('head')[0];
     head.appendChild(style);
+  }
   });
 }(window.jdr));

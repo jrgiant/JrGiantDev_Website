@@ -22,6 +22,7 @@
 				"gradients.less",
 				"header.less",
 				"mixins.less",
+				"nav.less",
 				"parallax.less",
 				"polygon.less",
 				"style.less",

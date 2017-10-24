@@ -2,6 +2,8 @@
 @import "element-font-sizes.less";
 @import "varibles.less";
 @import "mixins.less";
+@import "nav.less";
+@import "link-button.less";
 @import "header.less";
 @import "parallax.less";
 @import "footer.less";
@@ -32,9 +34,7 @@ a.back-to-top {
     position: fixed;
     color:#101;
     background-color: rgba(186, 218, 85,0.4);
-    transition: opacity 1s;
-    -moz-transition: opacity 1s;
-    -webkit-transition: opacity 1s;
+    .transition(opacity, 1s);
     &:hover{
       background-color: rgba(186, 218, 85,1);
     }

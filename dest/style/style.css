@@ -211,6 +211,11 @@ nav {
   -moz-transition: background-color 200ms linear;
   -webkit-transition: background-color 200ms linear;
 }
+@media screen and (max-width: 768px) {
+  nav {
+    height: 6%;
+  }
+}
 nav .title {
   font-family: 'Shadows Into Light', cursive;
   font-weight: bold;
@@ -222,36 +227,45 @@ nav .title {
   -moz-transition: opacity 200ms ease-in-out;
   -webkit-transition: opacity 200ms ease-in-out;
 }
-#jump-to {
+@media screen and (max-width: 768px) {
+  nav .title {
+    margin-top: 2%;
+  }
+}
+nav a.link-button {
   float: right;
   margin-right: 10px;
+  transition: opacity 200ms ease-in-out;
+  -moz-transition: opacity 200ms ease-in-out;
+  -webkit-transition: opacity 200ms ease-in-out;
+}
+#jump-to {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1001;
 }
 #jump-to li {
-  height: 100%;
   display: inline-block;
   text-align: center;
-  margin-right: -2px;
-  margin-left: -2px;
-  margin-top: 11px;
-}
-#jump-to li a {
-  padding: 13px;
-  border-right: 1px solid #101;
-  background-color: #fef;
-  color: #101;
-  text-decoration: none;
-}
-#jump-to li a.first-item {
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
-}
-#jump-to li a.last-item {
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
 }
 #jump-to li a:hover {
-  background-color: #444;
-  color: #fef;
+  font-size: 1.1em;
+}
+a.link-button {
+  padding: 10px;
+  background-color: #0692d0;
+  border-radius: 5px;
+  color: white;
+  text-decoration: none;
+}
+@media screen and (max-width: 768px) {
+  a.link-button {
+    padding: 35px;
+  }
+}
+a.link-button:hover {
+  background-color: #1ce;
 }
 @font-face {
   font-family: 'Shadows Into Light';
@@ -287,9 +301,32 @@ header {
   padding-top: 5%;
   z-index: 1;
 }
+@media screen and (max-width: 768px) {
+  header {
+    height: 35vh;
+  }
+}
+@media screen and (min-width: 1200px) {
+  header {
+    padding-top: 2%;
+  }
+}
 header h1 {
   font-family: 'Shadows Into Light', cursive;
   font-weight: bold;
+}
+header a.link-button {
+  position: relative;
+  top: 20px;
+  margin-left: 5%;
+}
+@media screen and (max-width: 768px) {
+  header a.link-button {
+    top: 70px;
+  }
+}
+header a.link-button.website {
+  margin-left: 0;
 }
 .parallax {
   background-color: #bada55;
@@ -301,6 +338,19 @@ header h1 {
   min-height: 200px;
   height: 100vh;
   max-height: 1600px;
+}
+@media screen and (min-width: 1200px) {
+  .parallax {
+    background-size: 1000px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .parallax {
+    background-size: 95% 95%;
+    background-attachment: scroll;
+    background-position: 50% -200%;
+    top: -10vh;
+  }
 }
 .parallax > .parallax-content {
   position: absolute;
@@ -317,11 +367,34 @@ header h1 {
   width: 94%;
   text-align: center;
 }
+.parallax > .parallax-content a {
+  color: white;
+  text-decoration: none;
+}
+.parallax > .parallax-content a:hover {
+  font-size: 1.1em;
+}
+@media screen and (min-width: 1200px) {
+  .parallax > .parallax-content {
+    padding-top: 6%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .parallax > .parallax-content {
+    top: 60%;
+    padding-top: 22%;
+  }
+}
 .parallax > .parallax-closing {
   height: 5vh;
   clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 30%);
   shape-outside: polygon(0 0, 100% 0%, 100% 100%, 0 30%);
   background-color: #101;
+}
+@media screen and (max-width: 768px) {
+  .parallax > .parallax-closing {
+    height: 10vh;
+  }
 }
 .parallax > img {
   height: 40%;
@@ -333,7 +406,7 @@ footer {
   background-color: #101;
   color: white;
   padding-bottom: 50px;
-  background-image: url("../../raw-media/nicholas-kampouris-218781.jpg");
+  background-image: url("../media/nicholas-kampouris-218781.jpg");
   background-color: #bada55;
   background-size: cover;
   background-position: center;
@@ -343,6 +416,19 @@ footer {
   min-height: 200px;
   height: 100vh;
   max-height: 1600px;
+}
+@media screen and (min-width: 1200px) {
+  footer {
+    background-size: 1000px;
+  }
+}
+@media screen and (max-width: 768px) {
+  footer {
+    background-size: 95% 95%;
+    background-attachment: scroll;
+    background-position: 50% -200%;
+    top: -10vh;
+  }
 }
 footer > .parallax-content {
   position: absolute;
@@ -359,17 +445,45 @@ footer > .parallax-content {
   width: 94%;
   text-align: center;
 }
+footer > .parallax-content a {
+  color: white;
+  text-decoration: none;
+}
+footer > .parallax-content a:hover {
+  font-size: 1.1em;
+}
+@media screen and (min-width: 1200px) {
+  footer > .parallax-content {
+    padding-top: 6%;
+  }
+}
+@media screen and (max-width: 768px) {
+  footer > .parallax-content {
+    top: 60%;
+    padding-top: 22%;
+  }
+}
 footer > .parallax-closing {
   height: 5vh;
   clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 30%);
   shape-outside: polygon(0 0, 100% 0%, 100% 100%, 0 30%);
   background-color: #101;
 }
+@media screen and (max-width: 768px) {
+  footer > .parallax-closing {
+    height: 10vh;
+  }
+}
 footer > img {
   height: 40%;
   position: fixed;
   top: 25%;
   left: 20%;
+}
+@media screen and (min-width: 1200px), screen and (max-width: 768px) {
+  footer {
+    background-size: cover !important;
+  }
 }
 @media screen and (max-width: 458px) {
   footer {
@@ -406,27 +520,40 @@ footer a img {
     width: 75px;
   }
 }
+body {
+  background-color: #101;
+}
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 2em;
+  }
+}
 .all-logos {
   background-color: #ddedd3;
-  background-image: url("../../raw-media/all_web_tech_logos.png");
+  background-image: url("../media/all_web_tech_logos.png");
   height: 80vh;
   top: -10vh;
 }
+@media screen and (max-width: 768px) {
+  .all-logos {
+    top: -15vh;
+  }
+}
 .javascript-jquery-nodejs {
   background-color: #ededff;
-  background-image: url("../../raw-media/Javascript_jquery_node.png");
+  background-image: url("../media/Javascript_jquery_node.png");
 }
 .html-css-bootstrap-less {
   background-color: #c0ffee;
-  background-image: url("../../raw-media/html5_css_less_bootstrap.png");
+  background-image: url("../media/html5_css_less_bootstrap.png");
 }
 .php-mysql-git {
   background-color: #c0dec5;
-  background-image: url("../../raw-media/php-mysql-git-no-background.png");
+  background-image: url("../media/php-mysql-git-no-background.png");
 }
 .microsoft {
   background-color: #add1c7;
-  background-image: url("../../raw-media/microsoft-logos.png");
+  background-image: url("../media/microsoft-logos.png");
 }
 a.back-to-top {
   position: fixed;

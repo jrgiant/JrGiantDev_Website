@@ -70,7 +70,6 @@
 __webpack_require__(1);
 __webpack_require__(2);
 __webpack_require__(3);
-__webpack_require__(4);
 
 
 /***/ }),
@@ -132,6 +131,11 @@ jdr.onloads.push(()=>{
       var title = nav.querySelector(".title");
       title.style.display = isScrolledPast(150)?"block":"none";
       title.style.opacity = isScrolledPast(200)?"1":"0";
+      var buttons = nav.querySelectorAll(".link-button");
+      buttons.forEach((b, i)=>{
+        b.style.display = isScrolledPast(150)?"block":"none";
+        b.style.opacity = isScrolledPast(200)?"1":"0";
+      });
       nav.style.backgroundColor=isScrolled?"#101":"unset";
 
 
@@ -148,12 +152,6 @@ jdr.onloads.push(()=>{
   }
 }(window.jdr))
 
-
-/***/ }),
-/* 4 */
-/***/ (function(module, exports) {
-
-throw new Error("Module build failed: \r\n\r\n@import url(\"https://fonts.googleapis.com/css?family=Shadows+Into+Light\");\r\n^\r\nCan't resolve './https://fonts.googleapis.com/css?family=Shadows+Into+Light' in 'C:\\Users\\JrGia\\Documents\\GitHub\\JrGiantDev_Website\\src\\less'\r\n      in C:\\Users\\JrGia\\Documents\\GitHub\\JrGiantDev_Website\\src\\less\\header.less (line 1, column 0)");
 
 /***/ })
 /******/ ]);

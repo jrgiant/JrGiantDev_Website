@@ -211,6 +211,11 @@ nav {
   -moz-transition: background-color 200ms linear;
   -webkit-transition: background-color 200ms linear;
 }
+@media screen and (max-width: 768px) {
+  nav {
+    height: 6%;
+  }
+}
 nav .title {
   font-family: 'Shadows Into Light', cursive;
   font-weight: bold;
@@ -221,6 +226,11 @@ nav .title {
   transition: opacity 200ms ease-in-out;
   -moz-transition: opacity 200ms ease-in-out;
   -webkit-transition: opacity 200ms ease-in-out;
+}
+@media screen and (max-width: 768px) {
+  nav .title {
+    margin-top: 2%;
+  }
 }
 nav a.link-button {
   float: right;
@@ -248,6 +258,11 @@ a.link-button {
   border-radius: 5px;
   color: white;
   text-decoration: none;
+}
+@media screen and (max-width: 768px) {
+  a.link-button {
+    padding: 35px;
+  }
 }
 a.link-button:hover {
   background-color: #1ce;
@@ -286,6 +301,16 @@ header {
   padding-top: 5%;
   z-index: 1;
 }
+@media screen and (max-width: 768px) {
+  header {
+    height: 35vh;
+  }
+}
+@media screen and (min-width: 1200px) {
+  header {
+    padding-top: 2%;
+  }
+}
 header h1 {
   font-family: 'Shadows Into Light', cursive;
   font-weight: bold;
@@ -294,6 +319,11 @@ header a.link-button {
   position: relative;
   top: 20px;
   margin-left: 5%;
+}
+@media screen and (max-width: 768px) {
+  header a.link-button {
+    top: 70px;
+  }
 }
 header a.link-button.website {
   margin-left: 0;
@@ -308,6 +338,19 @@ header a.link-button.website {
   min-height: 200px;
   height: 100vh;
   max-height: 1600px;
+}
+@media screen and (min-width: 1200px) {
+  .parallax {
+    background-size: 1000px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .parallax {
+    background-size: 95% 95%;
+    background-attachment: scroll;
+    background-position: 50% -200%;
+    top: -10vh;
+  }
 }
 .parallax > .parallax-content {
   position: absolute;
@@ -324,11 +367,34 @@ header a.link-button.website {
   width: 94%;
   text-align: center;
 }
+.parallax > .parallax-content a {
+  color: white;
+  text-decoration: none;
+}
+.parallax > .parallax-content a:hover {
+  font-size: 1.1em;
+}
+@media screen and (min-width: 1200px) {
+  .parallax > .parallax-content {
+    padding-top: 6%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .parallax > .parallax-content {
+    top: 60%;
+    padding-top: 22%;
+  }
+}
 .parallax > .parallax-closing {
   height: 5vh;
   clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 30%);
   shape-outside: polygon(0 0, 100% 0%, 100% 100%, 0 30%);
   background-color: #101;
+}
+@media screen and (max-width: 768px) {
+  .parallax > .parallax-closing {
+    height: 10vh;
+  }
 }
 .parallax > img {
   height: 40%;
@@ -351,6 +417,19 @@ footer {
   height: 100vh;
   max-height: 1600px;
 }
+@media screen and (min-width: 1200px) {
+  footer {
+    background-size: 1000px;
+  }
+}
+@media screen and (max-width: 768px) {
+  footer {
+    background-size: 95% 95%;
+    background-attachment: scroll;
+    background-position: 50% -200%;
+    top: -10vh;
+  }
+}
 footer > .parallax-content {
   position: absolute;
   top: 80%;
@@ -366,17 +445,45 @@ footer > .parallax-content {
   width: 94%;
   text-align: center;
 }
+footer > .parallax-content a {
+  color: white;
+  text-decoration: none;
+}
+footer > .parallax-content a:hover {
+  font-size: 1.1em;
+}
+@media screen and (min-width: 1200px) {
+  footer > .parallax-content {
+    padding-top: 6%;
+  }
+}
+@media screen and (max-width: 768px) {
+  footer > .parallax-content {
+    top: 60%;
+    padding-top: 22%;
+  }
+}
 footer > .parallax-closing {
   height: 5vh;
   clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 30%);
   shape-outside: polygon(0 0, 100% 0%, 100% 100%, 0 30%);
   background-color: #101;
 }
+@media screen and (max-width: 768px) {
+  footer > .parallax-closing {
+    height: 10vh;
+  }
+}
 footer > img {
   height: 40%;
   position: fixed;
   top: 25%;
   left: 20%;
+}
+@media screen and (min-width: 1200px) {
+  footer {
+    background-size: cover !important;
+  }
 }
 @media screen and (max-width: 458px) {
   footer {
@@ -413,11 +520,24 @@ footer a img {
     width: 75px;
   }
 }
+body {
+  background-color: #101;
+}
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 2em;
+  }
+}
 .all-logos {
   background-color: #ddedd3;
   background-image: url("../../raw-media/all_web_tech_logos.png");
   height: 80vh;
   top: -10vh;
+}
+@media screen and (max-width: 768px) {
+  .all-logos {
+    top: -15vh;
+  }
 }
 .javascript-jquery-nodejs {
   background-color: #ededff;

@@ -4,9 +4,15 @@ header {
   .parrallel-polygon(0,0%,70%,100%);
   text-align: center;
   height: 20vh;
+  @media screen and (max-width: @screen-sm){
+    height: 35vh;
+  }
   position: relative;
   padding-top: 5%;
   z-index: 1;
+  @media screen and (min-width: @screen-lg){
+    padding-top: 2%;
+  }
   h1{
     font-family: 'Shadows Into Light', cursive;
     font-weight:bold;
@@ -14,6 +20,9 @@ header {
   a.link-button{
     position: relative;
     top: 20px;
+    @media screen and (max-width: @screen-sm){
+      top: 70px;
+    }
     margin-left: 5%;
     &.website {
       margin-left: 0;

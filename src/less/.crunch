@@ -21,6 +21,7 @@
 				"footer.less",
 				"gradients.less",
 				"header.less",
+				"link-button.less",
 				"mixins.less",
 				"nav.less",
 				"parallax.less",

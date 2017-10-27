@@ -1,5 +1,5 @@
 .parallax{
-  background-color: #bada55;
+  background-color: @parallax-background-color;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -18,14 +18,15 @@
 
   &>.parallax-content {
     position: absolute;
-    top:80%;
+    top:75%;
     left:0;
     min-height:@parallax-text-min-height;
     padding:10px;
-    background-color: #101;
+    background-color: @parallax-content-color;
     color:#fefefe;
     height: 40%;
-    clip-path: polygon(0 0,100% 17%, 100% 100%, 0 100%);
+    .parrallel-polygon(0%,17%, 100%, 100%);
+    // clip-path: polygon(0 0,100% 17%, 100% 100%, 0 100%);
     padding: 3%;
     padding-top: 10%;
     a {
@@ -37,6 +38,7 @@
     }
     @media screen and (min-width:@screen-lg ){
       padding-top: 6%;
+       top: 70%;
     }
     @media screen and (max-width: @screen-sm){
       top: 60%;
@@ -48,7 +50,7 @@
   &>.parallax-closing{
     height: 5vh;
     .parrallel-polygon(0,0%, 100%, 30%);
-    background-color: #101;
+    background-color: @parallax-content-color;
     @media screen and (max-width: @screen-sm){
       height: 10vh;
     }

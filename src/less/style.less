@@ -9,42 +9,51 @@
 @import "footer.less";
 body {
   @media screen and (max-width: @screen-sm){
-        font-size: 2em;
+
   }
-  background-color: #101;
+  background-color: @parallax-content-color;
 }
 .all-logos{
-  background-color:#ddedd3;
-  background-image: url("../../raw-media/all_web_tech_logos.png");
+  background-color:#babaca;
+  background-image: url("../media/all_web_tech_logos.png");
   height:80vh;
   top:-10vh;
+  &>.parallax-content {
+    top:80%;
+  }
   @media screen and (max-width: @screen-sm){
     top:-15vh;
+    &>.parallax-closing {
+      height: 5vh;
+    }
   }
 }
 .javascript-jquery-nodejs {
-  background-color:#ededff;
-  background-image: url("../../raw-media/Javascript_jquery_node.png");
+
+  background-image: url("../media/Javascript_jquery_node.png");
 }
 .html-css-bootstrap-less {
-  background-color:#c0ffee;
-  background-image: url("../../raw-media/html5_css_less_bootstrap.png");
+
+  background-image: url("../media/html5_css_less_bootstrap.png");
+  &>.parallax-content {
+    top:70%;
+  }
 }
 .php-mysql-git {
-  background-color:#c0dec5;
-  background-image: url("../../raw-media/php-mysql-git-no-background.png");
+
+  background-image: url("../media/php-mysql-git-no-background.png");
 }
 .microsoft {
-  background-color:#add1c7;
-  background-image: url("../../raw-media/microsoft-logos.png");
+
+  background-image: url("../media/microsoft-logos.png");
 }
 a.back-to-top {
     position: fixed;
     color:#101;
-    background-color: rgba(186, 218, 85,0.4);
+    background-color: rgba(80,186,110,0.7);
     .transition(opacity, 1s);
     &:hover{
-      background-color: rgba(186, 218, 85,1);
+      background-color: rgba(80,186,110,1);
     }
     bottom: 40px;
     right: 40px;
@@ -59,5 +68,5 @@ a.back-to-top {
 .unsplash-credit {
   position: absolute;
   bottom:10px;
-  width:180px;
+  white-space: nowrap;
 }

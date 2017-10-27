@@ -1,11 +1,14 @@
 @import "https://fonts.googleapis.com/css?family=Shadows+Into+Light";
 header {
-  .radial-gradient-c0dec5-to-7add8a;
+  background-color: #1d1075;
   .parrallel-polygon(0,0%,70%,100%);
   text-align: center;
   height: 20vh;
   @media screen and (max-width: @screen-sm){
     height: 35vh;
+  }
+  @media screen and (max-width: @screen-xs){
+     .parrallel-polygon(0,0%,80%,100%);
   }
   position: relative;
   padding-top: 5%;
@@ -16,12 +19,16 @@ header {
   h1{
     font-family: 'Shadows Into Light', cursive;
     font-weight:bold;
+    color:white;
   }
   a.link-button{
     position: relative;
     top: 20px;
     @media screen and (max-width: @screen-sm){
       top: 70px;
+    }
+    @media screen and (max-width: @screen-xs){
+      top: 30px;
     }
     margin-left: 5%;
     &.website {

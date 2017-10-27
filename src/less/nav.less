@@ -17,14 +17,16 @@ nav {
     padding: 13px;
     display: none;
     @media screen and (max-width: @screen-sm){
-      margin-top: 2%;
+      font-size:.8em;
     }
     .transition(opacity, 200ms);
   }
   a.link-button {
     float: right;
     margin-right: 10px;
-
+    @media screen and (max-width: @screen-sm){
+      margin-right: 1px;
+    }
     .transition(opacity, 200ms);
   }
 
@@ -33,14 +35,18 @@ nav {
   position: absolute;
   top: 0;
   right: 0;
-  z-index: 1001;
-
+  z-index: 1003;
+  color: white;
+  ul, span{
+    float:left;
+  }
   li {
 
     display: inline-block;
     text-align: center;
 
     a {
+      color:white;
         &:hover {
         font-size: 1.1em;
       }

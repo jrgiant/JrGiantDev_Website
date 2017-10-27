@@ -229,7 +229,7 @@ nav .title {
 }
 @media screen and (max-width: 768px) {
   nav .title {
-    margin-top: 2%;
+    font-size: .8em;
   }
 }
 nav a.link-button {
@@ -239,15 +239,28 @@ nav a.link-button {
   -moz-transition: opacity 200ms ease-in-out;
   -webkit-transition: opacity 200ms ease-in-out;
 }
+@media screen and (max-width: 768px) {
+  nav a.link-button {
+    margin-right: 1px;
+  }
+}
 #jump-to {
   position: absolute;
   top: 0;
   right: 0;
-  z-index: 1001;
+  z-index: 1003;
+  color: white;
+}
+#jump-to ul,
+#jump-to span {
+  float: left;
 }
 #jump-to li {
   display: inline-block;
   text-align: center;
+}
+#jump-to li a {
+  color: white;
 }
 #jump-to li a:hover {
   font-size: 1.1em;
@@ -261,7 +274,7 @@ a.link-button {
 }
 @media screen and (max-width: 768px) {
   a.link-button {
-    padding: 35px;
+    display: inline-block;
   }
 }
 a.link-button:hover {
@@ -274,25 +287,8 @@ a.link-button:hover {
   src: local('Shadows Into Light'), local('ShadowsIntoLight'), url(https://fonts.gstatic.com/s/shadowsintolight/v7/clhLqOv7MXn459PTh0gXYBayoCksK7A5ZWkzVNukUdQ.ttf) format('truetype');
 }
 header {
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#c0dec5+0,7add8a+100 */
-  background: #c0dec5;
-  /* Old browsers */
-  /* IE9 SVG, needs conditional override of 'filter' to 'none' */
-  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPHJhZGlhbEdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY3g9IjUwJSIgY3k9IjUwJSIgcj0iNzUlIj4KICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiNjMGRlYzUiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjN2FkZDhhIiBzdG9wLW9wYWNpdHk9IjEiLz4KICA8L3JhZGlhbEdyYWRpZW50PgogIDxyZWN0IHg9Ii01MCIgeT0iLTUwIiB3aWR0aD0iMTAxIiBoZWlnaHQ9IjEwMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
-  background: -moz-radial-gradient(center, ellipse cover, #c0dec5 0%, #7add8a 100%);
-  /* FF3.6-15 */
-  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #c0dec5), color-stop(100%, #7add8a));
-  /* Chrome4-9,Safari4-5 */
-  background: -webkit-radial-gradient(center, ellipse cover, #c0dec5 0%, #7add8a 100%);
-  /* Chrome10-25,Safari5.1-6 */
-  background: -o-radial-gradient(center, ellipse cover, #c0dec5 0%, #7add8a 100%);
-  /* Opera 12+ */
-  background: -ms-radial-gradient(center, ellipse cover, #c0dec5 0%, #7add8a 100%);
-  /* IE10 preview */
-  background: radial-gradient(ellipse at center, #c0dec5 0%, #7add8a 100%);
-  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#c0dec5', endColorstr='#7add8a', GradientType=1);
-  /* IE6-8 fallback on horizontal gradient */
+  background-color: #1d1075;
+  -webkit-clip-path: polygon(0 0, 100% 0%, 100% 70%, 0 100%);
   clip-path: polygon(0 0, 100% 0%, 100% 70%, 0 100%);
   shape-outside: polygon(0 0, 100% 0%, 100% 70%, 0 100%);
   text-align: center;
@@ -306,6 +302,13 @@ header {
     height: 35vh;
   }
 }
+@media screen and (max-width: 458px) {
+  header {
+    -webkit-clip-path: polygon(0 0, 100% 0%, 100% 80%, 0 100%);
+    clip-path: polygon(0 0, 100% 0%, 100% 80%, 0 100%);
+    shape-outside: polygon(0 0, 100% 0%, 100% 80%, 0 100%);
+  }
+}
 @media screen and (min-width: 1200px) {
   header {
     padding-top: 2%;
@@ -314,6 +317,7 @@ header {
 header h1 {
   font-family: 'Shadows Into Light', cursive;
   font-weight: bold;
+  color: white;
 }
 header a.link-button {
   position: relative;
@@ -325,11 +329,16 @@ header a.link-button {
     top: 70px;
   }
 }
+@media screen and (max-width: 458px) {
+  header a.link-button {
+    top: 30px;
+  }
+}
 header a.link-button.website {
   margin-left: 0;
 }
 .parallax {
-  background-color: #bada55;
+  background-color: #babaca;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -354,14 +363,16 @@ header a.link-button.website {
 }
 .parallax > .parallax-content {
   position: absolute;
-  top: 80%;
+  top: 75%;
   left: 0;
   min-height: 200px;
   padding: 10px;
-  background-color: #101;
+  background-color: #1d1075;
   color: #fefefe;
   height: 40%;
-  clip-path: polygon(0 0, 100% 17%, 100% 100%, 0 100%);
+  -webkit-clip-path: polygon(0 0%, 100% 17%, 100% 100%, 0 100%);
+  clip-path: polygon(0 0%, 100% 17%, 100% 100%, 0 100%);
+  shape-outside: polygon(0 0%, 100% 17%, 100% 100%, 0 100%);
   padding: 3%;
   padding-top: 10%;
   width: 94%;
@@ -377,6 +388,7 @@ header a.link-button.website {
 @media screen and (min-width: 1200px) {
   .parallax > .parallax-content {
     padding-top: 6%;
+    top: 70%;
   }
 }
 @media screen and (max-width: 768px) {
@@ -387,9 +399,10 @@ header a.link-button.website {
 }
 .parallax > .parallax-closing {
   height: 5vh;
+  -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 30%);
   clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 30%);
   shape-outside: polygon(0 0, 100% 0%, 100% 100%, 0 30%);
-  background-color: #101;
+  background-color: #1d1075;
 }
 @media screen and (max-width: 768px) {
   .parallax > .parallax-closing {
@@ -406,8 +419,8 @@ footer {
   background-color: #101;
   color: white;
   padding-bottom: 50px;
-  background-image: url("../../raw-media/nicholas-kampouris-218781.jpg");
-  background-color: #bada55;
+  background-image: url("../media/alex-rodriguez-santibanez-312683.jpg");
+  background-color: #babaca;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -432,14 +445,16 @@ footer {
 }
 footer > .parallax-content {
   position: absolute;
-  top: 80%;
+  top: 75%;
   left: 0;
   min-height: 200px;
   padding: 10px;
-  background-color: #101;
+  background-color: #1d1075;
   color: #fefefe;
   height: 40%;
-  clip-path: polygon(0 0, 100% 17%, 100% 100%, 0 100%);
+  -webkit-clip-path: polygon(0 0%, 100% 17%, 100% 100%, 0 100%);
+  clip-path: polygon(0 0%, 100% 17%, 100% 100%, 0 100%);
+  shape-outside: polygon(0 0%, 100% 17%, 100% 100%, 0 100%);
   padding: 3%;
   padding-top: 10%;
   width: 94%;
@@ -455,6 +470,7 @@ footer > .parallax-content a:hover {
 @media screen and (min-width: 1200px) {
   footer > .parallax-content {
     padding-top: 6%;
+    top: 70%;
   }
 }
 @media screen and (max-width: 768px) {
@@ -465,9 +481,10 @@ footer > .parallax-content a:hover {
 }
 footer > .parallax-closing {
   height: 5vh;
+  -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 30%);
   clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 30%);
   shape-outside: polygon(0 0, 100% 0%, 100% 100%, 0 30%);
-  background-color: #101;
+  background-color: #1d1075;
 }
 @media screen and (max-width: 768px) {
   footer > .parallax-closing {
@@ -483,11 +500,6 @@ footer > img {
 @media screen and (min-width: 1200px), screen and (max-width: 768px) {
   footer {
     background-size: cover !important;
-  }
-}
-@media screen and (max-width: 458px) {
-  footer {
-    padding-top: 80px;
   }
 }
 footer .centerFooter {
@@ -521,44 +533,44 @@ footer a img {
   }
 }
 body {
-  background-color: #101;
-}
-@media screen and (max-width: 768px) {
-  body {
-    font-size: 2em;
-  }
+  background-color: #1d1075;
 }
 .all-logos {
-  background-color: #ddedd3;
-  background-image: url("../../raw-media/all_web_tech_logos.png");
+  background-color: #babaca;
+  background-image: url("../media/all_web_tech_logos.png");
   height: 80vh;
   top: -10vh;
+}
+.all-logos > .parallax-content {
+  top: 80%;
 }
 @media screen and (max-width: 768px) {
   .all-logos {
     top: -15vh;
   }
+  .all-logos > .parallax-closing {
+    height: 5vh;
+  }
 }
 .javascript-jquery-nodejs {
-  background-color: #ededff;
-  background-image: url("../../raw-media/Javascript_jquery_node.png");
+  background-image: url("../media/Javascript_jquery_node.png");
 }
 .html-css-bootstrap-less {
-  background-color: #c0ffee;
-  background-image: url("../../raw-media/html5_css_less_bootstrap.png");
+  background-image: url("../media/html5_css_less_bootstrap.png");
+}
+.html-css-bootstrap-less > .parallax-content {
+  top: 70%;
 }
 .php-mysql-git {
-  background-color: #c0dec5;
-  background-image: url("../../raw-media/php-mysql-git-no-background.png");
+  background-image: url("../media/php-mysql-git-no-background.png");
 }
 .microsoft {
-  background-color: #add1c7;
-  background-image: url("../../raw-media/microsoft-logos.png");
+  background-image: url("../media/microsoft-logos.png");
 }
 a.back-to-top {
   position: fixed;
   color: #101;
-  background-color: rgba(186, 218, 85, 0.4);
+  background-color: rgba(80, 186, 110, 0.7);
   transition: opacity 1s ease-in-out;
   -moz-transition: opacity 1s ease-in-out;
   -webkit-transition: opacity 1s ease-in-out;
@@ -572,10 +584,10 @@ a.back-to-top {
   border-radius: 40px;
 }
 a.back-to-top:hover {
-  background-color: #bada55;
+  background-color: #50ba6e;
 }
 .unsplash-credit {
   position: absolute;
   bottom: 10px;
-  width: 180px;
+  white-space: nowrap;
 }

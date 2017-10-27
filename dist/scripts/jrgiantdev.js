@@ -136,7 +136,7 @@ jdr.onloads.push(()=>{
         b.style.display = isScrolledPast(150)?"block":"none";
         b.style.opacity = isScrolledPast(200)?"1":"0";
       });
-      nav.style.backgroundColor=isScrolled?"#101":"unset";
+      nav.style.backgroundColor=isScrolled?"#1d1075":"unset";
 
 
     }

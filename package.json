@@ -1,6 +1,6 @@
 {
   "name": "jrgiantdev_website",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "The behind the scenes files for the development of JrGiantDev",
   "main": "index.html",
   "scripts": {
@@ -9,12 +9,27 @@
   "author": "Joshua D. Rose",
   "license": "ISC",
   "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
     "css-loader": "^0.28.7",
     "extract-text-webpack-plugin": "^3.0.1",
-    "less": "^3.0.0-alpha.3",
-    "less-loader": "^4.0.5",
-    "request": "^2.83.0",
+    "faker": "^4.1.0",
+    "node-sass": "^4.5.3",
+    "sass-loader": "^6.0.6",
     "style-loader": "^0.19.0",
-    "webpack": "^3.8.1"
+    "webpack": "^3.8.1",
+    "webpack-dev-server": "^2.9.3"
+  },
+  "dependencies": {
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
+    "react-html-parser": "^2.0.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jrgiant/jrgiantdev_website.git"
   }
 }

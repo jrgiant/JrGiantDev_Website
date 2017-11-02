@@ -1,0 +1,8 @@
+@import 'mixins.scss';
+@import 'varibles.scss';
+
+
+.container {
+    @include center-element();
+    @include singleProperyResponsive(width,540px, 740px, 960px,1140px);
+}

@@ -4,7 +4,11 @@ export function parallelPolygon(){
         topLeft: '0%',
         topRight: '0%',
         bottomRight: '100%',
-        bottomLeft: '100%'
+        bottomLeft: '100%',
+        topLeftX: '0%',
+        topRightX: '100%',
+        bottomRightX: '100%',
+        bottomLeftX: '0%'
     }    
       
         if (evenNumberOfParams(arguments.length)) {
@@ -16,8 +20,8 @@ export function parallelPolygon(){
     
     
     return `
-        clip-path: polygon(0 ${angles.topLeft}, 100% ${angles.topRight}, 100% ${angles.bottomRight}, 0% ${angles.bottomLeft});
-        shape-outside: polygon(0 ${angles.topLeft}, 100% ${angles.topRight}, 100% ${angles.bottomRight}, 0% ${angles.bottomLeft});
+        clip-path: polygon(${angles.topLeftX} ${angles.topLeft}, ${angles.topRightX} ${angles.topRight}, ${angles.bottomRightX} ${angles.bottomRight}, ${angles.bottomLeftX} ${angles.bottomLeft});
+        shape-outside: polygon(${angles.topLeftX} ${angles.topLeft}, ${angles.topRightX} ${angles.topRight}, ${angles.bottomRightX} ${angles.bottomRight}, ${angles.bottomLeftX} ${angles.bottomLeft});
     `;
 }
 function evenNumberOfParams(count) {
@@ -31,7 +35,7 @@ function evenNumberOfParams(count) {
 function hasProp(prop, obj){
     let f=true;
     if(!obj.hasOwnProperty(prop)){
-        console.warn(`${arguments[i]} does not follow naming convention
+        console.warn(`${prop} does not follow naming convention
                 use 'topLeft' || 'topRight' || 'bottomRight' || 'bottomLeft'
                 `);
         f=false;
@@ -51,7 +55,7 @@ export function mediaQueries(ph= null, tb_p=null, tb_l=null, dk= null, lg_dk=nul
     if (args[0] != null) mq += `@media (max-width:599px){ ${args[0]}}`; 
     mqs.forEach((m, i)=>{
         const j = i+1;
-        console.log(`index=${i} css=${args[j]}`);
+        //console.log(`index=${i} css=${args[j]}`);
         if(args[j]!=null) mq += `@media (min-width:${m}){ ${args[j]}}`;
     });
     

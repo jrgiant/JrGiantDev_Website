@@ -8,14 +8,14 @@ const h1Sizes = [
     `font-size: 4rem;`, 
     `font-size: 5rem;`
 ]
-const _HEADER = styled.header`
-    background-color:blue;
+const _HEADER = styled.div`
+    background-color:${(props)=>props.backgroundColor || '#565656'};
     color:#fff;
     text-align:center;
     padding-top:2%;
     height: 200px;
     ${mediaQueries('height:110px', 'height:160px',null, 'height:200px')};
-    ${parallelPolygon('bottomRight','70%')};
+    
     > h1 {
         font-family:'Shadows Into Light', cursive;
         font-size:5rem;
@@ -31,13 +31,14 @@ const _HEADER = styled.header`
 `;
 
 class JDR_HEADER extends React.Component{
-    constructor(){
-        super();
-        this.text = this.props.children || "Place Holder Text";
+    constructor(props){
+        super(props);
+        this.text = "Place Holder Text";
+        this.props = props;
     }
     render(){
         return(
-            <_HEADER><h1>{this.props.children}</h1></_HEADER>
+            <_HEADER isTop={this.props.isTop}><h1>{this.props.children || this.text}</h1></_HEADER>
         )
     }
 }

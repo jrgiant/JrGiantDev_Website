@@ -4,5 +4,15 @@
 
 .container {
     @include center-element();
-    @include singleProperyResponsive(width,540px, 740px, 960px,1140px);
+    @include singleProperyResponsive(width,100%, 100%, 100%, 960px,1140px);
+    @include screen-tablet-landscape {
+        max-width:960px;
+    }
+    @media (max-width: $tablet-portrait-max){
+        margin-left:0;
+        margin-right:0;
+    }
+}
+p,h1,h2,h3,h4,h5 {
+    @include singleProperyResponsive("font-size", 1rem, 1.2rem, 1.4rem, 1.6rem, 2rem);
 }

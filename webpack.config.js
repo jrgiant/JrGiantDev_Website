@@ -37,7 +37,7 @@ module.exports = {
         extractSass,
         (function () {
             this.plugin('done', function (stats) {
-                console.log(('\n[Compiled at' + new Date().toTimeString() + ']') + ' .\n');
+                console.log(('\n[Compiled at ' + new Date().toTimeString() + ']') + ' .\n');
             });
         })
     ]

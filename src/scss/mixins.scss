@@ -8,13 +8,13 @@
   @media (max-width: $phone-only-max) { @content; }
 }
 @mixin screen-tablet-portrait {
-  @media (min-width: $tablet-portrait) { @content; }
+  @media (min-width: $tablet-portrait) and (max-width:$tablet-portrait-max){ @content; }
 }
 @mixin screen-tablet-landscape {
-  @media (min-width: $tablet-landscape) { @content; }
+  @media (min-width: $tablet-landscape) and (max-width:$tablet-landscape-max){ @content; }
 }
 @mixin screen-desktop {
-  @media (min-width: $desktop) { @content; }
+  @media (min-width: $desktop) and (max-width: $desktop-max){ @content; }
 }
 @mixin screen-big-desktop {
   @media (min-width: $big-desktop) { @content; }
@@ -25,27 +25,27 @@
 @mixin singleProperyResponsive($property, $ph:null, $tb-p:null, $tb-l:null, $dk:null, $lg-dk:null){
    @if ($ph){
        @include screen-phone {
-           $property : $ph;
+           #{$property} : $ph;
         }
     }
     @if ($tb-p){
         @include screen-tablet-portrait {
-        $property : $tb-p;
+        #{$property} : $tb-p;
         }
     }
     @if ($tb-l){
         @include screen-tablet-landscape {
-        $property : $tb-l;
+        #{$property} : $tb-l;
         }
     }
     @if ($dk){
         @include screen-desktop {
-        $property : $dk;
+        #{$property} : $dk;
         }
     }
     @if (lg) {
         @include screen-big-desktop {
-        $property : $lg-dk;
+        #{$property} : $lg-dk;
         }
     }
 }

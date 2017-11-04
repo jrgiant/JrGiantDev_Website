@@ -48,6 +48,7 @@ Temporary Items
 
 #original or reference files
 .source/
-node_modules/
+
 cloudinaryUpload.js
 data.json
+node_modules/

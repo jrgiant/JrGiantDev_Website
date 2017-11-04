@@ -13,7 +13,7 @@ render(<Frame header="JrGiant Development">
     <JDR_HEADER>Websites I have Built</JDR_HEADER>
     <Section_With_Image imgOn="left"/>
     <JDR_HEADER>Languages I have worked with</JDR_HEADER>
-    <Section_With_Image />
+    < Section_With_Image imgSrc = "https://res.cloudinary.com/jrgiantdev/image/upload/q_45/v1509665210/hjiweyap05nw2sbim82w.png" />
     <JDR_HEADER>Code Review</JDR_HEADER>
     <Section_With_Image imgOn="left"/>
     <JDR_HEADER>Do you like what you see?</JDR_HEADER>

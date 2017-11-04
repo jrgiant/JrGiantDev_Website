@@ -1,5 +1,5 @@
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
-const extractLess = new ExtractTextPlugin({
+const extractSass = new ExtractTextPlugin({
     filename: "[name].[contenthash].css",
     disable: process.env.NODE_ENV === "development"
 });
@@ -12,11 +12,11 @@ module.exports = {
     },
     module: {
         rules: [
-            { test: /\.less$/,  use: extractLess.extract({
+            { test: /\.Sass$/,  use: extractSass.extract({
                 use: [{
                     loader: "css-loader"
                 }, {
-                    loader: "less-loader"
+                    loader: "sass-loader"
                 }],
                 // use style-loader in development
                 fallback: "style-loader"
@@ -25,6 +25,6 @@ module.exports = {
         ]
     },
     plugins: [
-        extractLess
+        extractSass
     ]
 };

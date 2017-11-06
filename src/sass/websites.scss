@@ -1,0 +1,31 @@
+.websites {
+    width:100%;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 2rem;
+    height: 90vh;
+    margin-bottom: 20vh;;
+    &>img {
+        width:28%;
+        &.first-img{
+            transform: rotate(-10deg);
+            transform-origin: right;
+        }
+            &.last-img {
+            transform: rotate(10deg);
+            transform-origin: left;
+        }
+        &.mid-img {
+            position: relative;
+            z-index: 500;
+        }
+    }
+    &>h3 {
+        padding-top: 10vh;
+        padding-bottom: 10vh;
+        margin-top: 0;
+        background-color: #d0d0d0;
+        
+
+    }
+}

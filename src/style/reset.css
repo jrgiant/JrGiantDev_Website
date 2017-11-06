@@ -1,0 +1,12 @@
+body {
+  margin: 0;
+  min-width: 400px; }
+
+.clearfix::after {
+  content: '';
+  clear: both;
+  display: block;
+  visibility: hidden;
+  height: 0; }
+
+/*# sourceMappingURL=reset.css.map */

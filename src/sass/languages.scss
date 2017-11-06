@@ -1,0 +1,32 @@
+.languages {
+    background-image: url('../media/languages.png');
+    background-size: 80%;
+    height: 90vh;
+    margin-top: 10vh;
+    &>.overlay {
+       
+        &>div{
+            float: left;
+        }
+        &>.textarea {
+            width: 59%;
+            height: 100%;
+            &>div {
+                margin: 50px;
+                margin-left: 30%;
+                font-size: 1.8rem;
+                p {
+                    text-align: justify;
+                }
+            }
+        }
+
+        &>.imgarea {
+            width: 40%;
+            &>img {
+                width: 80%;
+                margin: 10%;
+            }
+        }
+    }
+}

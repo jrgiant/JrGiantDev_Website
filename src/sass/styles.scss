@@ -1,0 +1,52 @@
+@import 'reset.scss';
+@import 'polygon.scss';
+@import 'colors.scss';
+
+nav {
+    background-color: beige;
+    height:10vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1001;
+}
+.websites, .languages {
+    height: 90vh;
+}
+header {
+    width: 100%;
+    margin-top: 10vh;
+    background-image: url('../media/languages.png');
+    position: relative;
+    background-size: 80%;
+    height: 90vh;
+    &>.overlay{
+    &>div {
+        height:90vh;
+        float:left;
+        &:first-child{
+            width: 60%;
+            &>div {
+                margin:50px;
+                margin-right:30%;
+                font-size: 1.8rem;
+                p {
+                    text-align: justify;
+                }
+            }
+        }
+        &:last-child{
+            width:39%;
+            &>img {
+                    width: 80%;
+                    margin:10%;
+
+                }
+            
+        }
+    }
+}
+}
+@import 'websites.scss';
+@import 'languages.scss';

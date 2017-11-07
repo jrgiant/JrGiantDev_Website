@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,kBAAmB;EACf,SAAS,EAAE,sCAAsC;EACjD,aAAa,EAAE,sCAAsC;;AAEzD,iBAAkB;EACd,SAAS,EAAE,yCAAyC;EACpD,aAAa,EAAE,yCAAyC",
+"sources": ["../sass/polygon.scss"],
+"names": [],
+"file": "polygon.css"
+}

@@ -1,0 +1,36 @@
+.websites {
+  width: 100%;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 2rem;
+  min-height: 90vh;
+  background-image: url("../media/earth.png");
+  background-attachment: fixed;
+  background-size: 80%;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative; }
+  .websites .overlay {
+    background-color: rgba(238, 234, 234, 0.8);
+    padding-bottom: 10vh; }
+    .websites .overlay img {
+      width: 28%;
+      border-radius: 10px; }
+      .websites .overlay img.first-img {
+        transform: rotate(-10deg);
+        transform-origin: right; }
+      .websites .overlay img.last-img {
+        transform: rotate(10deg);
+        transform-origin: left; }
+      .websites .overlay img.mid-img {
+        position: relative;
+        z-index: 500; }
+    .websites .overlay h3 {
+      padding-top: 10vh;
+      padding-bottom: 10vh;
+      margin-top: 0;
+      background-color: #d0d0d0; }
+    .websites .overlay p {
+      padding-top: 10vh; }
+
+/*# sourceMappingURL=websites.css.map */

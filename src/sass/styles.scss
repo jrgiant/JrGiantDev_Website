@@ -1,6 +1,7 @@
 @import 'reset.scss';
 @import 'polygon.scss';
 @import 'colors.scss';
+@import 'movingBackground.scss';
 
 nav {
     background-color: beige;
@@ -11,9 +12,7 @@ nav {
     right: 0;
     z-index: 1001;
 }
-.websites, .languages {
-    height: 90vh;
-}
+
 header {
     width: 100%;
     margin-top: 10vh;
@@ -48,5 +47,13 @@ header {
     }
 }
 }
+.attribution {
+    font-size: .4rem;
+    position: absolute;
+    bottom:0;
+    right:0;
+
+}
 @import 'websites.scss';
 @import 'languages.scss';
+@import 'footer.scss';

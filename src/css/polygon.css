@@ -1,0 +1,9 @@
+.poly-top-right-70 {
+  clip-path: polygon(0 0, 70% 0, 100% 100%, 0 100%);
+  shape-outside: polygon(0 0, 70% 0, 100% 100%, 0 100%); }
+
+.poly-top-left-30 {
+  clip-path: polygon(30% 0, 100% 0, 100% 100%, 0 100%);
+  shape-outside: polygon(30% 0, 100% 0, 100% 100%, 0 100%); }
+
+/*# sourceMappingURL=polygon.css.map */

@@ -13,7 +13,7 @@ footer {
     .centerFooter {
         text-align: center;
         position: absolute;
-        top: 40%;
+        top: 20%;
         left: 15%;
         background-color: rgba(0, 0, 0, 0.8);
         padding: 5%;
@@ -21,6 +21,10 @@ footer {
         width: 67%;
         &>div {
             padding-top: 20px;
+        }
+        .link-button {
+            font-size: 2rem;
+            padding:10px;
         }
     }
     a {

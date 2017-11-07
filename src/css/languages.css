@@ -1,12 +1,11 @@
 .languages {
   background-image: url("../media/languages.png");
   background-size: 80%;
-  height: 90vh;
-  margin-top: 10vh; }
+  height: 90vh; }
   .languages > .overlay > div {
     float: left; }
   .languages > .overlay > .textarea {
-    width: 59%;
+    width: 60%;
     height: 100%; }
     .languages > .overlay > .textarea > div {
       margin: 50px;

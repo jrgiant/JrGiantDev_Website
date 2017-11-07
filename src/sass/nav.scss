@@ -1,0 +1,23 @@
+nav {
+    background-color: beige;
+    
+    height: 55px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1001;
+    .title {
+        font-family: 'Shadows Into Light', cursive;
+        font-weight: bold;
+        color: black;
+        float: left;
+        padding: 13px;
+    }
+    a.link-button {
+        float: right;
+        margin-right: 10px;
+        margin-top: 10px;
+        
+    }
+}

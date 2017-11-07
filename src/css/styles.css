@@ -1,3 +1,4 @@
+@import "https://fonts.googleapis.com/css?family=Shadows+Into+Light";
 body {
   margin: 0;
   min-width: 400px; }
@@ -27,17 +28,27 @@ body {
   position: relative; }
 
 .movingBackground {
-  background-position: 0px center;
+  background-position: -1000px center;
   transition: background-position 20s linear; }
 
 nav {
   background-color: beige;
-  height: 10vh;
+  height: 55px;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   z-index: 1001; }
+  nav .title {
+    font-family: 'Shadows Into Light', cursive;
+    font-weight: bold;
+    color: black;
+    float: left;
+    padding: 13px; }
+  nav a.link-button {
+    float: right;
+    margin-right: 10px;
+    margin-top: 10px; }
 
 header {
   width: 100%;
@@ -68,6 +79,15 @@ header {
   position: absolute;
   bottom: 0;
   right: 0; }
+
+.link-button {
+  padding: 10px;
+  background-color: #0692d0;
+  border-radius: 5px;
+  color: white;
+  text-decoration: none; }
+  .link-button:hover {
+    background-color: #1ce; }
 
 .websites {
   width: 100%;
@@ -107,12 +127,11 @@ header {
 .languages {
   background-image: url("../media/languages.png");
   background-size: 80%;
-  height: 90vh;
-  margin-top: 10vh; }
+  height: 90vh; }
   .languages > .overlay > div {
     float: left; }
   .languages > .overlay > .textarea {
-    width: 59%;
+    width: 60%;
     height: 100%; }
     .languages > .overlay > .textarea > div {
       margin: 50px;
@@ -139,7 +158,7 @@ footer {
   footer .centerFooter {
     text-align: center;
     position: absolute;
-    top: 40%;
+    top: 20%;
     left: 15%;
     background-color: rgba(0, 0, 0, 0.8);
     padding: 5%;
@@ -147,6 +166,9 @@ footer {
     width: 67%; }
     footer .centerFooter > div {
       padding-top: 20px; }
+    footer .centerFooter .link-button {
+      font-size: 2rem;
+      padding: 10px; }
   footer a {
     margin-left: 5%;
     margin-right: 5%; }

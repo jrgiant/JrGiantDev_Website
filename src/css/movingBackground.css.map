@@ -1,6 +1,6 @@
 {
 "version": 3,
-"mappings": "AAAA,iBAAkB;EACd,mBAAmB,EAAE,UAAU;EAC/B,UAAU,EAAC,8BAA8B",
+"mappings": "AAAA,iBAAkB;EACd,mBAAmB,EAAE,cAAc;EACnC,UAAU,EAAC,8BAA8B",
 "sources": ["../sass/movingBackground.scss"],
 "names": [],
 "file": "movingBackground.css"

@@ -2,14 +2,14 @@
     background-image: url('../media/languages.png');
     background-size: 80%;
     height: 90vh;
-    margin-top: 10vh;
+    
     &>.overlay {
        
         &>div{
             float: left;
         }
         &>.textarea {
-            width: 59%;
+            width: 60%;
             height: 100%;
             &>div {
                 margin: 50px;

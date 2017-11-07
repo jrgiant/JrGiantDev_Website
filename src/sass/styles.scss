@@ -1,18 +1,9 @@
 @import 'reset.scss';
+@import 'externalfiles.scss';
 @import 'polygon.scss';
 @import 'colors.scss';
 @import 'movingBackground.scss';
-
-nav {
-    background-color: beige;
-    height:10vh;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1001;
-}
-
+@import 'nav.scss';
 header {
     width: 100%;
     margin-top: 10vh;
@@ -20,40 +11,50 @@ header {
     position: relative;
     background-size: 80%;
     height: 90vh;
-    &>.overlay{
-    &>div {
-        height:90vh;
-        float:left;
-        &:first-child{
-            width: 60%;
-            &>div {
-                margin:50px;
-                margin-right:30%;
-                font-size: 1.8rem;
-                p {
-                    text-align: justify;
+    &>.overlay {
+        &>div {
+            height: 90vh;
+            float: left;
+            &:first-child {
+                width: 60%;
+                &>div {
+                    margin: 50px;
+                    margin-right: 30%;
+                    font-size: 1.8rem;
+                    p {
+                        text-align: justify;
+                    }
+                }
+            }
+            &:last-child {
+                width: 39%;
+                &>img {
+                    width: 80%;
+                    margin: 10%;
                 }
             }
         }
-        &:last-child{
-            width:39%;
-            &>img {
-                    width: 80%;
-                    margin:10%;
-
-                }
-            
-        }
     }
 }
-}
+
 .attribution {
     font-size: .4rem;
     position: absolute;
-    bottom:0;
-    right:0;
-
+    bottom: 0;
+    right: 0;
 }
+
+.link-button {
+    padding: 10px;
+    background-color: #0692d0;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    &:hover {
+        background-color: #1ce;
+    }
+}
+
 @import 'websites.scss';
 @import 'languages.scss';
 @import 'footer.scss';

@@ -29,7 +29,7 @@ body {
 
 .movingBackground {
   background-position: -1000px center;
-  transition: background-position 20s linear; }
+  transition: background-position 40s linear; }
 
 nav {
   background-color: beige;
@@ -52,7 +52,7 @@ nav {
 
 header {
   width: 100%;
-  margin-top: 10vh;
+  margin-top: 55px;
   background-image: url("../media/languages.png");
   position: relative;
   background-size: 80%;

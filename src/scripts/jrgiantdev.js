@@ -12,6 +12,6 @@
             i = i == 1000 ? -1000: 1000;
             mb.forEach((el, ind)=>el.style.backgroundPosition = `${i}px center`);
             
-        }, 20000)
+        }, 40000)
     }
 }(window,document))

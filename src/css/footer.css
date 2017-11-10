@@ -1,3 +1,8 @@
+/* screen sizes */
+/* reused sizes */
+/* container sizes */
+/* media queries */
+/* single property change */
 footer {
   background-color: #101;
   color: white;
@@ -19,9 +24,16 @@ footer {
     width: 67%; }
     footer .centerFooter > div {
       padding-top: 20px; }
+    @media (max-width: 899px) {
+      footer .centerFooter {
+        left: 0;
+        width: 90%; } }
     footer .centerFooter .link-button {
       font-size: 2rem;
       padding: 10px; }
+      @media (max-width: 899px) {
+        footer .centerFooter .link-button {
+          display: block; } }
   footer a {
     margin-left: 5%;
     margin-right: 5%; }

@@ -118,6 +118,11 @@ body {
   background-position: -1000px center;
   transition: background-position 40s linear; }
 
+/* screen sizes */
+/* reused sizes */
+/* container sizes */
+/* media queries */
+/* single property change */
 nav {
   background-color: beige;
   height: 55px;
@@ -126,6 +131,9 @@ nav {
   left: 0;
   right: 0;
   z-index: 1001; }
+  @media (max-width: 899px) {
+    nav {
+      font-size: .7rem; } }
   nav .title {
     font-family: 'Shadows Into Light', cursive;
     font-weight: bold;
@@ -136,6 +144,9 @@ nav {
     float: right;
     margin-right: 10px;
     margin-top: 10px; }
+    @media (max-width: 899px) {
+      nav a.link-button {
+        float: left; } }
 
 header {
   width: 100%;
@@ -211,6 +222,11 @@ header {
   background-size: 80%;
   height: 90vh; }
 
+/* screen sizes */
+/* reused sizes */
+/* container sizes */
+/* media queries */
+/* single property change */
 footer {
   background-color: #101;
   color: white;
@@ -232,9 +248,16 @@ footer {
     width: 67%; }
     footer .centerFooter > div {
       padding-top: 20px; }
+    @media (max-width: 899px) {
+      footer .centerFooter {
+        left: 0;
+        width: 90%; } }
     footer .centerFooter .link-button {
       font-size: 2rem;
       padding: 10px; }
+      @media (max-width: 899px) {
+        footer .centerFooter .link-button {
+          display: block; } }
   footer a {
     margin-left: 5%;
     margin-right: 5%; }

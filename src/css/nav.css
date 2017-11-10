@@ -1,3 +1,8 @@
+/* screen sizes */
+/* reused sizes */
+/* container sizes */
+/* media queries */
+/* single property change */
 nav {
   background-color: beige;
   height: 55px;
@@ -6,6 +11,9 @@ nav {
   left: 0;
   right: 0;
   z-index: 1001; }
+  @media (max-width: 899px) {
+    nav {
+      font-size: .7rem; } }
   nav .title {
     font-family: 'Shadows Into Light', cursive;
     font-weight: bold;
@@ -16,5 +24,8 @@ nav {
     float: right;
     margin-right: 10px;
     margin-top: 10px; }
+    @media (max-width: 899px) {
+      nav a.link-button {
+        float: left; } }
 
 /*# sourceMappingURL=nav.css.map */

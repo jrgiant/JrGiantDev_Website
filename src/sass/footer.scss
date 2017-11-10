@@ -1,3 +1,5 @@
+@import 'varibles.scss';
+@import 'mixins.scss';
 footer {
     background-color: #101;
     color: white;
@@ -22,9 +24,16 @@ footer {
         &>div {
             padding-top: 20px;
         }
+        @include screen-phone-to-screen-tablet-portrait {
+            left:0;
+            width:90%;
+        }
         .link-button {
             font-size: 2rem;
             padding:10px;
+            @include screen-phone-to-screen-tablet-portrait {
+                display: block;
+            }
         }
     }
     a {

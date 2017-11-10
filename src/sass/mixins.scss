@@ -1,0 +1,98 @@
+@mixin center-element {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+/* media queries */
+
+@mixin screen-phone {
+    @media (max-width: $phone-only-max) {
+        @content;
+    }
+}
+
+@mixin screen-tablet-portrait {
+    @media (min-width: $tablet-portrait) and (max-width:$tablet-portrait-max) {
+        @content;
+    }
+}
+
+@mixin screen-phone-to-screen-tablet-portrait {
+    @media (max-width: $tablet-portrait-max) {
+        @content;
+    }
+}
+
+@mixin screen-tablet-landscape-and-up {
+    @media (min-width: $tablet-landscape) {
+        @content;
+    }
+}
+
+@mixin screen-tablet-landscape {
+    @media (min-width: $tablet-landscape) and (max-width:$tablet-landscape-max) {
+        @content;
+    }
+}
+
+@mixin screen-desktop {
+    @media (min-width: $desktop) and (max-width: $desktop-max) {
+        @content;
+    }
+}
+
+@mixin screen-big-desktop {
+    @media (min-width: $big-desktop) {
+        @content;
+    }
+}
+
+
+/* single property change */
+
+@mixin singleProperyResponsive($property, $ph:null, $tb-p:null, $tb-l:null, $dk:null, $lg-dk:null) {
+    @if ($ph) {
+        @include screen-phone {
+            #{$property}: $ph;
+        }
+    }
+    @if ($tb-p) {
+        @include screen-tablet-portrait {
+            #{$property}: $tb-p;
+        }
+    }
+    @if ($tb-l) {
+        @include screen-tablet-landscape {
+            #{$property}: $tb-l;
+        }
+    }
+    @if ($dk) {
+        @include screen-desktop {
+            #{$property}: $dk;
+        }
+    }
+    @if (lg) {
+        @include screen-big-desktop {
+            #{$property}: $lg-dk;
+        }
+    }
+}
+
+@mixin section-40 {
+    @include screen-phone-to-screen-tablet-portrait {
+        width: 100%;
+    }
+    @include screen-tablet-landscape-and-up {
+        width: 40%;
+    }
+}
+
+@mixin section-60 {
+    @include screen-phone-to-screen-tablet-portrait {
+        width: 100%;
+    }
+    @include screen-tablet-landscape-and-up {
+        width: 60%;
+    }
+}

@@ -1,6 +1,5 @@
 body {
-  margin: 0;
-  min-width: 400px; }
+  margin: 0; }
 
 .clearfix::after {
   content: '';

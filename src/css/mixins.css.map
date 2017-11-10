@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAMA,mBAAmB;AA6CnB,4BAA4B",
+"sources": ["../sass/mixins.scss"],
+"names": [],
+"file": "mixins.css"
+}

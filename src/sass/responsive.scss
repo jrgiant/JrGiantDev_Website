@@ -1,0 +1,62 @@
+    @import 'mixins.scss';
+    %sections-right {
+        float: right;
+    }
+
+    %sections-left {
+        float: right;
+    }
+
+    .section {
+        &.leftToRight {
+            .right {
+                @extend %sections-right;
+                @include section-40;
+            }
+            .left {
+                @extend %sections-right;
+                @include section-60;
+            }
+        }
+        &.rightToLeft {
+            .left {
+                @extend %sections-left;
+                @include section-60;
+            }
+            .right {
+                @extend %sections-left;
+                @include section-40;
+            }
+        }
+        .imagearea {
+            .img {
+                width: 80%;
+                margin: 10%;
+            }
+        }
+        @include screen-phone-to-screen-tablet-portrait {
+            min-height: 90vh;
+        }
+        @include screen-tablet-landscape-and-up {
+            height: 90vh;
+        }
+    }
+
+    .container {
+        @include screen-phone-to-screen-tablet-portrait {
+            width: 100%;
+        }
+        @include screen-tablet-landscape {
+            width: 100%;
+            max-width: $container-width;
+            @include center-element;
+        }
+        @include screen-desktop {
+            width: $container-width;
+            @include center-element;
+        }
+        @include screen-big-desktop {
+            width: $container-width;
+            @include center-element;
+        }
+    }

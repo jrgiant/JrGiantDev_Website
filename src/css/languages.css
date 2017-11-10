@@ -3,7 +3,7 @@
   background-size: 80%;
   height: 90vh; }
   .languages > .overlay > div {
-    float: left; }
+    float: right; }
   .languages > .overlay > .textarea {
     width: 60%;
     height: 100%; }

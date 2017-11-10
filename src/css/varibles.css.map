@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,kBAAkB;AAUlB,kBAAkB;AAGlB,qBAAqB",
+"sources": ["../sass/varibles.scss"],
+"names": [],
+"file": "varibles.css"
+}

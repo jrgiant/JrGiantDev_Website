@@ -1,4 +1,5 @@
 @import "https://fonts.googleapis.com/css?family=Shadows+Into+Light";
+@import url(../css/fonts/ostrich-sans.css);
 body {
   margin: 0; }
 
@@ -148,6 +149,10 @@ nav {
       nav a.link-button {
         float: left; } }
 
+.container {
+  font-family: 'ostrich sans';
+  font-weight: 500; }
+
 header {
   width: 100%;
   margin-top: 55px;
@@ -213,7 +218,9 @@ header {
       padding-top: 10vh;
       padding-bottom: 10vh;
       margin-top: 0;
-      background-color: #d0d0d0; }
+      background-color: #d0d0d0;
+      font-family: 'ostrich sans', Arial, Helvetica, sans-serif;
+      font-weight: bold; }
     .websites .overlay p {
       padding-top: 10vh; }
 

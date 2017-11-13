@@ -29,7 +29,9 @@
       padding-top: 10vh;
       padding-bottom: 10vh;
       margin-top: 0;
-      background-color: #d0d0d0; }
+      background-color: #d0d0d0;
+      font-family: 'ostrich sans', Arial, Helvetica, sans-serif;
+      font-weight: bold; }
     .websites .overlay p {
       padding-top: 10vh; }
 

@@ -3,10 +3,16 @@
     @import 'varibles.scss';
     @import 'mixins.scss';
     @import 'responsive.scss';
+    @import '../css/fonts/ostrich-sans.css';
     @import 'polygon.scss';
     @import 'colors.scss';
     @import 'movingBackground.scss';
     @import 'nav.scss';
+    .container {
+        font-family: 'ostrich sans';
+        font-weight: 500;
+
+    }
     header {
         width: 100%;
         margin-top: 55px;

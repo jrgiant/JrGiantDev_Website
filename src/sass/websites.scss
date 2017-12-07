@@ -2,7 +2,7 @@
     width: 100%;
     text-align: center;
     vertical-align: middle;
-    font-size: 2rem;
+    font-size: 3rem;
     min-height: 90vh;
     background-image: url('../media/earth.png');
     background-attachment: fixed;
@@ -16,6 +16,8 @@
         img {
             width: 28%;
             border-radius: 10px;
+            border: 1px solid #000000;
+            box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.46);
             &.first-img {
                 transform: rotate(-10deg);
                 transform-origin: right;
@@ -29,18 +31,19 @@
                 z-index: 500;
             }
         }
-        h3 {
-            padding-top: 10vh;
-            padding-bottom: 10vh;
+        h2 {
+            padding-top: 5vh;
+            padding-bottom: 5vh;
             margin-top: 0;
-            background-color: #d0d0d0;
+            background-color: #525252;
             font-family: 'ostrich sans', Arial, Helvetica, sans-serif;
             font-weight: bold;
+            color: #ffffff;
         }
         p {
             padding-top: 10vh;
+            margin-left: 10vw;
+            margin-right: 10vw;
         }
-        
-
     }
 }

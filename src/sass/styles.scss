@@ -8,15 +8,22 @@
     @import 'colors.scss';
     @import 'movingBackground.scss';
     @import 'nav.scss';
-    .container {
-        font-family: 'ostrich sans';
-        font-weight: 500;
-
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+        font-family: 'Ostrich Sans';
     }
+
+    .container {
+        font-family: sans-serif;
+    }
+
     header {
         width: 100%;
         margin-top: 55px;
-        background-image: url('../media/languages.png');
+        //background-image: url('../media/languages.png');
         position: relative;
         background-size: 80%;
         @include screen-tablet-landscape-and-up {

@@ -28,6 +28,8 @@ footer {
       footer .centerFooter {
         left: 0;
         width: 90%; } }
+    footer .centerFooter h2, footer .centerFooter h3, footer .centerFooter h4, footer .centerFooter h5 {
+      font-family: sans-serif; }
     footer .centerFooter .link-button {
       font-size: 2rem;
       padding: 10px; }
